@@ -1,0 +1,168 @@
+{
+  "menuItems": {
+    "Platform": {
+        "About Us": {
+            "pageTitle": "About Givecloud | Fundraising Software Built for Devoted Donors",
+            "url": "/about/"
+        },
+        "Security & Compliance": {
+            "pageTitle": "Nonprofit Fundraising Security & Compliance | Givecloud",
+            "url": "/security-compliance/"
+        },
+        "Support & Onboarding": {
+            "pageTitle": "Onboarding & Support That Champions Your Mission | Givecloud",
+            "url": "/support-onboarding/"
+        },
+        "DonorPerfect": {
+            "pageTitle": "DonorPerfect Integration for Nonprofits | Givecloud",
+            "url": "/givecloud-donorperfect/"
+        },
+        "Salesforce": {
+            "pageTitle": "Salesforce Integration for Nonprofits | Givecloud",
+            "url": "/givecloud-salesforce/"
+        },
+        "Explore all Integrations": {
+            "pageTitle": "Nonprofit Software Integrations | Givecloud",
+            "url": "/integrations/"
+        }
+    },
+    "Features": {
+        "Donation Forms": {
+            "pageTitle": "Donation Forms for Nonprofits | Givecloud",
+            "url": "/features/donation-forms/"
+        },
+        "Memberships": {
+            "pageTitle": "Memberships for Nonprofits | Givecloud",
+            "url": "/features/memberships/"
+        },
+        "Sponsorships": {
+            "pageTitle": "Sponsorships for Nonprofits | Givecloud",
+            "url": "/features/sponsorship/"
+        },
+        "Online Store": {
+            "pageTitle": "Online Store for Nonprofits | Givecloud",
+            "url": "/features/online-store/"
+        },
+        "Impact Giving": {
+            "pageTitle": "Impact Giving for Nonprofits | Givecloud",
+            "url": "/features/impact-giving-experiences/"
+        },
+        "Donor Portal": {
+            "pageTitle": "Donor Portal for Nonprofits | Givecloud",
+            "url": "/features/donor-portal/"
+        },
+        "Peer-to-Peer Fundraising": {
+            "pageTitle": "Peer-to-Peer Fundraising for Nonprofits | Givecloud",
+            "url": "/features/peer-to-peer-fundraising/"
+        },
+        "Email Automation": {
+            "pageTitle": "Email Automation for Nonprofits | Givecloud",
+            "url": "/features/email-automation/"
+        },
+        "Event Ticketing & Registration": {
+            "pageTitle": "Nonprofit Event Registration | Givecloud",
+            "url": "/features/event-registration/"
+        },
+        "Website Builder": {
+            "pageTitle": "Website Builder for Nonprofits | Givecloud",
+            "url": "/features/website-builder/"
+        },
+        "Virtual Point of Sale": {
+            "pageTitle": "Nonprofit POS System | Givecloud",
+            "url": "/features/virtual-point-of-sale/"
+        },
+        "Text to Give": {
+            "pageTitle": "Text-to-Give for Nonprofits | Givecloud",
+            "url": "/features/text-to-give/"
+        },
+        "Explore All Features": {
+            "pageTitle": "Fundraising Apps & Features - Givecloud",
+            "url": "/features/"
+        }
+    },
+    "Use Cases": {
+        "Increase Recurring Giving": {
+            "pageTitle": "Increase Recurring Giving with Donor-First Tools | Givecloud",
+            "url": "/solutions/increase-recurring-giving/"
+        },
+        "Boost Conversion Rates": {
+            "pageTitle": "Boost Donation Conversion Rates with Givecloud",
+            "url": "/solutions/boost-donation-conversion-rates/"
+        },
+        "Reduce Admin Burden": {
+            "pageTitle": "Reduce Admin Work for Nonprofits | Givecloud",
+            "url": "/solutions/reduce-admin-work-and-manual-data-entry/"
+        },
+        "AI-Optimized Fundraising": {
+            "pageTitle": "Smart Fundraising Tools for Nonprofits | Givecloud",
+            "url": "/solutions/ai-optimized-fundraising/"
+        },
+        "Unified Checkout": {
+            "pageTitle": "Unified Checkout for Donations, Events & More | Givecloud",
+            "url": "/solutions/unified-checkout/"
+        },
+        "Diversify Fundraising": {
+            "pageTitle": "Diversify Your Fundraising Strategy | Givecloud",
+            "url": "/solutions/diversify-fundraising/"
+        },
+        "Canadian Nonprofits": {
+            "pageTitle": "Fundraising Software for Canadian Nonprofits | Givecloud",
+            "url": "/solutions/canadian-fundraising-software/"
+        },
+        "Missions & Mission Trips": {
+            "pageTitle": "Donor-First Fundraising Tools for Mission & Global Ministry Work",
+            "url": "/industries/missions-mission-trips/"
+        },
+        "International Development": {
+            "pageTitle": "Donor-First Fundraising Tools for International Development Work",
+            "url": "/industries/international-development/"
+        },
+        "Faith-Based Organizations": {
+            "pageTitle": "Fundraising Tools for Faith-Based Organizations | Givecloud",
+            "url": "/industries/faith-based-orgs/"
+        },
+        "Arts & Culture": {
+            "pageTitle": "Fundraising Software for Arts & Culture Organizations | Givecloud",
+            "url": "/industries/fundraising-software-arts-culture/"
+        },
+        "Animal Welfare": {
+            "pageTitle": "Fundraising Software for Animal Welfare Orgs | Givecloud",
+            "url": "/industries/animal-shelter-fundraising/"
+        },
+        "Food Banks": {
+            "pageTitle": "Fundraising Software for Food Banks | Givecloud",
+            "url": "/industries/food-bank-fundraising/"
+        }
+    },
+    "Resources": {
+        "Knowledge Base & Help Center": {
+            "pageTitle": "Home | Givecloud Help Center",
+            "url": "https://help.givecloud.com/"
+        },
+        "Guides & Toolkits": {
+            "pageTitle": "Nonprofit Resources - Givecloud",
+            "url": "/resources/"
+        },
+        "Case Studies": {
+            "pageTitle": "Nonprofit Fundraising Case Studies | Givecloud",
+            "url": "/success-stories/"
+        },
+        "Become a Partner": {
+            "pageTitle": "Partner with Givecloud",
+            "url": "/partners/"
+        },
+        "Partner Directory": {
+            "pageTitle": "Explore the Givecloud Partner Directory | Givecloud",
+            "url": "/partner-directory/"
+        },
+        "Developer Docs": {
+            "pageTitle": "Home - Givecloud Developer Documentation - Givecloud Documentation",
+            "url": "https://developers.givecloud.com/"
+        },
+        "Blog": {
+            "pageTitle": "Nonprofit Fundraising Blog for Donor-First Growth | Givecloud",
+            "url": "/trustraising/"
+        }
+    }
+  }
+}

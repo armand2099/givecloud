@@ -129,6 +129,7 @@ export class ElementContainer extends BasePage{ //Class inherits from BasePage
     }
 
     async openLink(link: Locator, menuItem: Locator): Promise<string>{
+        /*Open Link from Menu*/
 
         let linkText = await link.textContent();
         console.log((await menuItem.innerText()).split(' ')[0] + ": " + linkText);
@@ -143,6 +144,14 @@ export class ElementContainer extends BasePage{ //Class inherits from BasePage
 
         return linkText;
 
+    }
+
+    async openLinkJSON(name: string, menuItem: Locator): Promise<void>{
+        /*Open Link from Menu from JSON data*/
+        console.log((await menuItem.innerText()).split(' ')[0] + ": " + name);    
+        await menuItem.click();
+        await this.page.getByRole('link', { name: name, exact: true }).nth(0).click();
+        await this.page.waitForLoadState('load');
     }
 
 }
