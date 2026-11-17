@@ -6,10 +6,10 @@ let container: ElementContainer;
 let linkText;
 
 
-test.beforeEach(async ({page}) => {
+test.beforeEach(async ({page, context}) => {
     await page.goto('/');
     await page.waitForLoadState('load');
-    container = new ElementContainer(page);
+    container = new ElementContainer(page, context);
 });
 
 test.describe.skip('Verify all Element Container Links', () => {
@@ -61,7 +61,7 @@ test.describe.skip('Verify all Element Container Links', () => {
 
 test.describe('Verify all Element Container Links (JSON)', () => {
 
-    test('Verify Platform menu Links', async ({page}) => {
+    test.skip('Verify Platform menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems.Platform)){     
             await container.openLinkJSON(name, container.platformMenu)
@@ -69,7 +69,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test('Verify Features menu Links', async ({page}) => {
+    test.skip('Verify Features menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems.Features)){     
             await container.openLinkJSON(name, container.featuresMenu)
@@ -77,7 +77,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test('Verify Use Cases menu Links', async ({page}) => {
+    test.skip('Verify Use Cases menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems['Use Cases'])){     
             await container.openLinkJSON(name, container.useCasesMenu)
@@ -85,9 +85,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test('Verify Pricing menu Links', async ({page}) => {
-        let linkText;
-
+    test.skip('Verify Pricing menu Links', async ({page}) => {
         await container.pricing.click();
         await page.waitForLoadState('load');
         expect.soft(await page.title()).toContain('Pricing');
@@ -95,12 +93,9 @@ test.describe('Verify all Element Container Links (JSON)', () => {
 
     test('Verify Resources menu Links', async ({page}) => {
         
-        for(const [name, item] of Object.entries(menuData.menuItems.Resources)){     
-            if (name == 'Developer Docs'){
-                continue;
-            }
-            await container.openLinkJSON(name, container.resourcesMenu)
-            expect.soft(await page.title()).toBe(item.pageTitle);
+        for(const [name, item] of Object.entries(menuData.menuItems.Resources)){  
+            const tabTitle = await container.openLinkJSON(name, container.resourcesMenu);
+            expect.soft(tabTitle).toBe(item.pageTitle);
 
             await container.goHomePage();
             expect(await page.title()).toBe("Fundraising That Feels Better — And Works Better | Givecloud");

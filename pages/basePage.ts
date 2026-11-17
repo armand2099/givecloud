@@ -1,4 +1,4 @@
-import { type Page, type ElementHandle, type Locator } from '@playwright/test';
+import { type Page, type ElementHandle, type Locator, type BrowserContext } from '@playwright/test';
 
 
 export class BasePage {
@@ -26,7 +26,27 @@ export class BasePage {
     async goHomePage(): Promise<void>{
         /* Navigates to the home page*/
 
+        await this.page.bringToFront();
         await this.page.goto('/');
         await this.page.waitForLoadState('load');
+    }
+
+    async catchNewTab(context: BrowserContext, element: Locator): Promise<Page>{
+        /*Catches new Tab opened*/
+        let newTab: Page;
+        let reTry = 0;
+        let tabTitle;
+
+        do {
+                const pagePromise = context.waitForEvent('page');
+                await element.click();
+                newTab = await pagePromise;            
+                await newTab.waitForLoadState("domcontentloaded");
+                await newTab.waitForSelector('body');
+                tabTitle = await newTab.title();
+                reTry++;
+            } while (newTab.isClosed() && reTry < 5);
+        
+        return newTab;
     }
 }
