@@ -61,7 +61,7 @@ test.describe.skip('Verify all Element Container Links', () => {
 
 test.describe('Verify all Element Container Links (JSON)', () => {
 
-    test.skip('Verify Platform menu Links', async ({page}) => {
+    test('Verify Platform menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems.Platform)){     
             await container.openLinkJSON(name, container.platformMenu)
@@ -69,7 +69,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test.skip('Verify Features menu Links', async ({page}) => {
+    test('Verify Features menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems.Features)){     
             await container.openLinkJSON(name, container.featuresMenu)
@@ -77,7 +77,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test.skip('Verify Use Cases menu Links', async ({page}) => {
+    test('Verify Use Cases menu Links', async ({page}) => {
         
         for(const [name, item] of Object.entries(menuData.menuItems['Use Cases'])){     
             await container.openLinkJSON(name, container.useCasesMenu)
@@ -85,7 +85,7 @@ test.describe('Verify all Element Container Links (JSON)', () => {
         }
     });
 
-    test.skip('Verify Pricing menu Links', async ({page}) => {
+    test('Verify Pricing menu Links', async ({page}) => {
         await container.pricing.click();
         await page.waitForLoadState('load');
         expect.soft(await page.title()).toContain('Pricing');
